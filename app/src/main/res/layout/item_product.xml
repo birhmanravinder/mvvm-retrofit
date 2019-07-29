@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.isolsgroup.rxmvvmdemo.ui.productlist.ProductItemViewModel"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/btnProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@drawable/selector_click"
+            android:gravity="center_vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                bind:imgUrl="@{vm.product.imgUrl}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <com.isolsgroup.rxmvvmdemo.ui.custom.CTextView
+                    android:text="@{vm.product.name}"
+                    tools:text="Xiomi MI A1"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    app:fontName="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.isolsgroup.rxmvvmdemo.ui.custom.CTextView
+                    android:text="@{vm.price}"
+                    tools:text="Rs 20,000"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    bind:visible="@{vm.product.underSale}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_on_sale"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+
+                    <com.isolsgroup.rxmvvmdemo.ui.custom.CTextView
+                        android:text="Hot Deal !"
+                        android:textColor="#f44336"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

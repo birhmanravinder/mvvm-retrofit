@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.isolsgroup.rxmvvmdemo.ui.productlist.ProductListViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <ProgressBar
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            bind:visible="@{vm.isLoading?(vm.page==1?true:false):false}"/>
+
+        <ProgressBar
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            bind:visible="@{vm.isLoading?(vm.page==1?false:true):false}"/>
+
+    </RelativeLayout>
+</layout>

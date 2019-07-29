@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#2b384a</color>
+    <color name="colorPrimary">#36465d</color>
+    <color name="colorPrimaryLight">#5e6a7d</color>
+
+    <color name="colorAccentDark">#498eb7</color>
+    <color name="colorAccent">#529ecc</color>
+    <color name="colorAccentLight">#63a7d1</color>
+
+    <color name="greenDark">#44966e</color>
+    <color name="green">#56bc8a</color>
+    <color name="greenLight">#77c9a1</color>
+
+    <color name="redDark">#c35439</color>
+    <color name="red">#d95e40</color>
+    <color name="redLight">#dc6e53</color>
+
+    <color name="orange">#fff2992e</color>
+    <color name="purple">#ffa77dc2</color>
+    <color name="yellow">#fff7dd38</color>
+
+    <color name="textDark">@color/grey_8</color>
+    <color name="textDark2">@color/grey_6</color>
+    <color name="textMedium">@color/grey_5</color>
+    <color name="textLight">@color/grey_4</color>
+    <color name="textLight2">@color/grey_3</color>
+
+    <color name="bgDefault">#EDF1F4</color>
+    <color name="bgDark">#ff2d2d2a</color>
+    <color name="bgDarker">#ff1d1d1d</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="fb_normal_color">#415dae</color>
+    <color name="fb_pressed_color">#3b5998</color>
+    <color name="google_normal_color">#dd4b39</color>
+    <color name="google_pressed_color">#f24c36</color>
+
+
+    <color name="grey_9">#ff070808</color>
+    <color name="grey_8">#ff161819</color>
+    <color name="grey_7">#ff25272a</color>
+    <color name="grey_6">#ff34373b</color>
+    <color name="grey_5">#ff4b4f54</color>
+    <color name="grey_4">#ff818488</color>
+    <color name="grey_3">#ffa5a7aa</color>
+    <color name="grey_2">#ffc9cbcc</color>
+    <color name="grey_1_5">#ffe6e6e6</color>
+    <color name="grey_1">#ffedeeee</color>
+    <color name="grey_0_7">#fff6f7f7</color>
+    <color name="grey_0_6">#fff9f9f9</color>
+    <color name="grey_0_5">#fffafafa</color>
+    <color name="grey_0_3">#fffcfcfc</color>
+
+
+    <color name="white_9">#fafafa</color>
+    <color name="white_8">#f5f5f5</color>
+    <color name="white_7">#eeeeee</color>
+    <color name="white_6">#e0e0e0</color>
+    <color name="white_5">#bdbdbd</color>
+    <color name="black_5">#9e9e9e</color>
+    <color name="black_6">#757575</color>
+    <color name="black_7">#616161</color>
+    <color name="black_8">#424242</color>
+    <color name="black_9">#212121</color>
+
+
+    <color name="grey_9_whiteout">#ff262626</color>
+    <color name="grey_8_whiteout">#ff363636</color>
+    <color name="grey_7_whiteout">#ff555555</color>
+    <color name="grey_6_whiteout">#ff737373</color>
+    <color name="grey_5_whiteout">#ff999999</color>
+    <color name="grey_4_whiteout">#ffb2b2b2</color>
+    <color name="grey_3_whiteout">#ffc7c7c7</color>
+    <color name="grey_2_whiteout">#ffdbdbdb</color>
+    <color name="grey_1_whiteout">#ffefefef</color>
+    <color name="grey_0_whiteout">#fffafafa</color>
+
+
+    <color name="white">#ffffffff</color>
+    <color name="white_97p">#f7ffffff</color>
+    <color name="white_90p">#e6ffffff</color>
+    <color name="white_80p">#ccffffff</color>
+    <color name="white_75p">#bfffffff</color>
+    <color name="white_70p">#b3ffffff</color>
+    <color name="white_55p">#8cffffff</color>
+    <color name="white_50p">#80ffffff</color>
+    <color name="white_30p">#4dffffff</color>
+    <color name="white_20p">#33ffffff</color>
+    <color name="white_10p">#1affffff</color>
+    <color name="white_5p">#0dffffff</color>
+
+    <color name="black">#ff000000</color>
+    <color name="black_95p">#f2000000</color>
+    <color name="black_90p">#e6000000</color>
+    <color name="black_80p">#cc000000</color>
+    <color name="black_70p">#b3000000</color>
+    <color name="black_60p">#99000000</color>
+    <color name="black_50p">#80000000</color>
+    <color name="black_40p">#66000000</color>
+    <color name="black_30p">#4D000000</color>
+    <color name="black_20p">#33000000</color>
+    <color name="black_10p">#1A000000</color>
+    <color name="black_5p">#10000000</color>
+</resources>

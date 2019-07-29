@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.isolsgroup.rxmvvmdemo.ui.main.CategoryItemViewModel"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/btnCategory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/selector_click">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                bind:src="@{vm.category.icon}"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:viewAspectRatio="1"/>
+
+            <com.isolsgroup.rxmvvmdemo.ui.custom.CTextView
+                tools:text="Ashutosh Verma"
+                android:text="@{vm.category.name}"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
