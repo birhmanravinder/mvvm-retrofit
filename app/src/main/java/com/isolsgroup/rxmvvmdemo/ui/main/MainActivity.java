@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         ActivityComponent.component(this).inject(this);
 
         context=this;
-        viewModel.loadCategories();  // first repository
+        viewModel.loadCategories();  // first repository on git
 
         recyclerView.setLayoutManager(new GridLayoutManager(context, 3));
         adapter= new CategoryAdapter(router, viewModel.getCategories());
